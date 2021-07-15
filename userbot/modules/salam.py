@@ -29,6 +29,15 @@ async def typewriter(typew):
     await typew.edit("**Assalamualaikum...**")
 
 
+@register(outgoing=True, pattern="^.sin(?: |$)(.*)")
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    sleep(1)
+    await typew.edit(f"**Hai, SINNER keren dateng...**")
+    sleep(2)
+    await typew.edit("**NGENTOD LU SEMUA😜...**")
+
+
 @register(outgoing=True, pattern=r"^\.l(?: |$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
@@ -56,6 +65,8 @@ CMD_HELP.update(
         \n  •  **Function : **LU SEMUA NGENTOT 🔥\
         \n\n  •  **Syntax :** `.j`\
         \n  •  **Function : **NIMBRUNG GOBLOKK!!!🔥\
+        \n\n  •  **Syntax :** `.sin`\
+        \n  •  **Function : **SINNER KEREN!!!🔥\
     "
     }
 )
