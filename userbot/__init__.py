@@ -107,9 +107,9 @@ GITHUB_ACCESS_TOKEN = os.environ.get("GITHUB_ACCESS_TOKEN", None)
 # Custom (forked) repo URL for updater.
 UPSTREAM_REPO_URL = os.environ.get(
     "UPSTREAM_REPO_URL",
-    "https://github.com/mrismanaziz/Man-Userbot.git")
+    "https://github.com/artadaniela/sinner-userbot.git")
 UPSTREAM_REPO_BRANCH = os.environ.get(
-    "UPSTREAM_REPO_BRANCH", "Man-Userbot")
+    "UPSTREAM_REPO_BRANCH", "sinner-userbot")
 
 # Console verbose logging
 CONSOLE_LOGGER_VERBOSE = sb(os.environ.get("CONSOLE_LOGGER_VERBOSE", "False"))
@@ -346,7 +346,7 @@ with bot:
 
 
 async def check_alive():
-    await bot.send_message(BOTLOG_CHATID, "```🔥 Man-Userbot Berhasil Di Aktifkan 🔥```")
+    await bot.send_message(BOTLOG_CHATID, "```🔥 Sinner-Userbot Berhasil Di Entod 🔥```")
     return
 
 with bot:
@@ -423,18 +423,18 @@ with bot:
         async def handler(event):
             await event.message.get_sender()
             text = (
-                f"**Hey**, __I am using__ 🔥 **Man-Userbot** 🔥\n\n"
+                f"**Hey**, __I am using__ 🔥 **Sinner-Userbot** 🔥\n\n"
                 f"       __Thanks For Using me__\n\n"
                 f"✣ **Userbot Version :** `{BOT_VER}@{UPSTREAM_REPO_BRANCH}`\n"
-                f"✣ **Group Support :** [Sharing Userbot](t.me/sharinguserbot)\n"
-                f"✣ **Owner Repo :** [Risman](t.me/mrismanaziz)\n"
-                f"✣ **Repo :** [Man-Userbot](https://github.com/mrismanaziz/Man-Userbot)\n")
+                f"✣ **Group Support :** [XXX squad18+](t.me/XXXsquad_18plus)\n"
+                f"✣ **Owner Repo :** [Sinner](t.me/lifeinsinn)\n"
+                f"✣ **Repo :** [Sinner-Userbot](https://github.com/artadaniela/sinner-userbot)\n")
             await tgbot.send_file(event.chat_id, logo, caption=text,
                                   buttons=[
                                       [
                                           custom.Button.url(
                                               text="⛑ Group Support ⛑",
-                                              url="https://t.me/SharingUserbot"
+                                              url="https://t.me/XXXsquad_18plus"
                                           )
                                       ]
                                   ]
@@ -450,7 +450,7 @@ with bot:
                 result = builder.article(
                     "Harap Gunakan .help Untuk Perintah",
                     text="{}\n\n**✥ Jumlah Module Yang Tersedia :** `{}` **Module**\n               \n**✥ Daftar Modul Man-Userbot :** \n".format(
-                        "**✗ Man-Userbot Main Menu ✗**",
+                        "**Sinner-Userbot Main Menu**",
                         len(dugmeler),
                     ),
                     buttons=buttons,
@@ -459,33 +459,33 @@ with bot:
             elif query.startswith("repo"):
                 result = builder.article(
                     title="Repository",
-                    description="Repository Man - Userbot",
-                    url="https://t.me/SharingUserbot",
-                    text="**Man - UserBot**\n➖➖➖➖➖➖➖➖➖➖\n✣ **Owner Repo :** [Risman](https://t.me/mrismanaziz)\n✣ **Grup Support :** @SharingUserbot\n✣ **Repository :** [Man-Userbot](https://github.com/mrismanaziz/Man-Userbot)\n➖➖➖➖➖➖➖➖➖➖",
+                    description="Repository Sinner - Userbot",
+                    url="https://t.me/XXXsquad_18plus",
+                    text="**Sinner - UserBot**\n➖➖➖➖➖➖➖➖➖➖\n✣ **Owner Repo :** [Sinner](https://t.me/lifeinsinn)\n✣ **Grup Support :** @XXXsquad_18plus\n✣ **Repository :** [Sinner-Userbot](https://github.com/artadaniela/Sinner-Userbot)\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
                             custom.Button.url(
                                 "Support",
-                                "https://t.me/SharingUserbot"),
+                                "https://t.me/XXXsquad_18plus"),
                             custom.Button.url(
                                 "Repo",
-                                "https://github.com/mrismanaziz/Man-Userbot")],
+                                "https://github.com/artadaniela/sinner-userbot")],
                     ],
                     link_preview=False)
             else:
                 result = builder.article(
-                    title="✗ Man-Userbot ✗",
-                    description="Man - UserBot | Telethon",
-                    url="https://t.me/SharingUserbot",
-                    text="**Man - UserBot**\n➖➖➖➖➖➖➖➖➖➖\n✣ **Owner Repo :** [Risman](https://t.me/mrismanaziz)\n✣ **Grup Support :** @SharingUserbot\n✣ **Repository :** [Man-Userbot](https://github.com/mrismanaziz/Man-Userbot)\n➖➖➖➖➖➖➖➖➖➖",
+                    title="sinner-userbot",
+                    description="Sinner - UserBot | Telethon",
+                    url="https://t.me/XXXsquad_18plus",
+                    text="**Sinner - UserBot**\n➖➖➖➖➖➖➖➖➖➖\n✣ **Owner Repo :** [Sinner](https://t.me/lifeinsinn)\n✣ **Grup Support :** @XXXsquad_18plus\n✣ **Repository :** [Sinner-Userbot](https://github.com/artadaniela/sinner-userbot)\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
                             custom.Button.url(
                                 "Support",
-                                "https://t.me/SharingUserbot"),
+                                "https://t.me/XXXsquad_18plus"),
                             custom.Button.url(
                                 "Repo",
-                                "https://github.com/mrismanaziz/Man-Userbot")],
+                                "https://github.com/artadaniela/sinner-userbot")],
                     ],
                     link_preview=False,
                 )
